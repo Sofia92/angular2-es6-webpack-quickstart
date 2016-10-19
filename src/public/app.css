@@ -1,0 +1,114 @@
+.content {
+    padding-top: 20%;
+}
+
+.category-box {
+    position: relative;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    padding: 0 20px 20px 20px;
+}
+
+.box-light-bg .category-box {
+    overflow: hidden;
+    background: #fff;
+    border: 1px solid #ddd;
+}
+
+.category-box h3 {
+    margin: 0;
+    line-height: normal;
+    font-weight: bold;
+}
+.productImg-wrap {
+    display: table;
+    table-layout: fixed;
+    height: 210px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 5px;
+    border-bottom: rgba(240, 240, 240, 0.97) 1px solid;
+}
+.productImg img {
+    display: block;
+    margin: 0 auto;
+}
+.category-box:hover {
+    position: relative;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    box-shadow: 0 0 25px darkgray;
+}
+
+.productPrice {
+    font-family: arial, verdana, sans-serif !important;
+    color: #C00;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 0 5px;
+    letter-spacing: normal;
+    overflow: inherit !important;
+    white-space: nowrap;
+}
+
+.productPrice em {
+    float: left;
+    font-family: arial;
+    font-weight: 400;
+    font-size: 20px;
+    color: #bc00000;
+}
+.productPrice em b {
+    margin-right: 2px;
+    font-weight: 700;
+    font-size: 14px;
+    vertical-align: middle;
+}
+.productTitle {
+    display: block;
+    margin-bottom: 3px;
+    word-break: break-all;
+    position: relative;
+    max-height: 40px;
+    text-align: left;
+}
+
+.productTitle a {
+    color: #888;
+    cursor: pointer;
+}
+
+.productFooter {
+    color: #777;
+    font-size: 11px;
+    line-height: 17px;
+    text-align: center;
+    border-radius: 0 0 3px 3px;
+    padding-top:20px;
+}
+
+.productFooter p {
+    padding-top: 10px;
+    font-size: 11px;
+}
+
+/*按钮样式*/
+.btn-liking {
+    border: 0;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 400;
+    padding: 6px 13px;
+    position: relative;
+    background: #337ab7;
+    display: inline-block;
+    text-decoration: none;
+}
+
+/*自定义背景样式*/
+.bg-liking-category {
+    background-color: rgba(223, 240, 255, 0.4);
+}
