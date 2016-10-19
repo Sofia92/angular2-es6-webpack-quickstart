@@ -3,8 +3,13 @@ var webpack = require("webpack");
 
 module.exports = {
   entry: {
+<<<<<<< HEAD
     "vendor": "./src/vendor",
     "app": "./src/boot"
+=======
+    "vendor": "./app/vendor",
+    "app": "./app/boot"
+>>>>>>> 82f04e67421f8e73e723a18b4e5519e878497250
   },
   output: {
     path: __dirname,
