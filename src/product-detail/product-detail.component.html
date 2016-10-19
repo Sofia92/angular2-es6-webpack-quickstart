@@ -72,9 +72,9 @@
     <h1>Tab Group Demo</h1>
 
     <md-tab-group class="demo-tab-group">
-        <md-tab *ngFor="#tab of tabs" >{{tab.label}}
-            <template md-tab-label>{{tab.label}}</template>
-            <template md-tab-content>
+        <md-tab *ngFor="let tab of tabs" >{{tab.label}}
+            <template >{{tab.label}}</template>
+            <template >
                 {{tab.content}}
                 <br>
                 <br>
