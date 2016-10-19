@@ -5,11 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-<<<<<<< HEAD
     "tsc": "tsc",
     "tsc:w": "tsc -w",
-=======
->>>>>>> 82f04e67421f8e73e723a18b4e5519e878497250
     "postinstall": "typings install",
     "build": "webpack",
     "start": "webpack-dev-server"
