@@ -1,3 +1,4 @@
+/// <reference path="../typings/browser.d.ts" />
 "use strict";
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -9,18 +10,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var AllCategoryComponent = (function () {
-    function AllCategoryComponent() {
+var AppComponent = (function () {
+    function AppComponent() {
     }
-    AllCategoryComponent = __decorate([
+    AppComponent = __decorate([
         core_1.Component({
-            selector: 'all-category',
-            templateUrl: './src/all-category/all-category.component.html',
-            styleUrls: ['./src/public/app.css'],
+            selector: 'my-app',
+            template: "<h1>My First Angular 2 App hahah</h1>"
         }), 
         __metadata('design:paramtypes', [])
-    ], AllCategoryComponent);
-    return AllCategoryComponent;
+    ], AppComponent);
+    return AppComponent;
 }());
-exports.AllCategoryComponent = AllCategoryComponent;
-//# sourceMappingURL=all-category.component.js.map
+exports.AppComponent = AppComponent;
+//# sourceMappingURL=app.component.js.map

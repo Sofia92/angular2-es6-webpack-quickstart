@@ -17,7 +17,7 @@ var IndexComponent = (function () {
         core_1.Component({
             selector: 'index',
             template: "\n\t\t<div class=\"col-sm-8 col-sm-offset-2 content\">\n\t\t<div class=\"form-group\">\n\t\t    <h1>{{title}}</h1>\n        </div>\n        <div class=\"form-group well-lg\">\n            <div class=\"input-group\">\n                <input type=\"text\" class=\"form-control\">\n                <span class=\"input-group-btn\">\n                    <button type=\"button\" class=\"btn btn-default\">Search !</button>\n                </span>\n            </div>\n        </div>\t    \n\t\t</div>\n\t",
-            styleUrls: ['./app/public/app.css']
+            styleUrls: ['./src/public/app.css']
         }), 
         __metadata('design:paramtypes', [])
     ], IndexComponent);

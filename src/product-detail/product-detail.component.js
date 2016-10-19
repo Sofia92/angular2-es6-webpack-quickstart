@@ -12,14 +12,27 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * Created by sofia on 2016/10/18.
  */
 var core_1 = require('@angular/core');
+var Observable_1 = require('rxjs/Observable');
 var ProductDetailComponent = (function () {
     function ProductDetailComponent() {
+        var _this = this;
+        this.tabs = [
+            { label: 'Tab One', content: 'This is the body of the first tab' },
+            { label: 'Tab Two', content: 'This is the body of the second tab' },
+            { label: 'Tab Three', content: 'This is the body of the third tab' },
+        ];
+        this.asyncTabs = Observable_1.Observable.create(function (observer) {
+            setTimeout(function () {
+                observer.next(_this.tabs);
+            }, 1000);
+        });
     }
     ProductDetailComponent = __decorate([
         core_1.Component({
-            selector: 'all-category',
-            templateUrl: './app/product-detail/product-detail.component.html',
-            styleUrls: ['./app/public/app.css']
+            selector: 'product-detail',
+            templateUrl: './src/product-detail/product-detail.component.html',
+            styleUrls: ['./src/public/app.css'],
+            encapsulation: core_1.ViewEncapsulation.None,
         }), 
         __metadata('design:paramtypes', [])
     ], ProductDetailComponent);
