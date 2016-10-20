@@ -1,10 +1,12 @@
-body{
+body {
     font-family: "Microsoft Yahei", sans-serif;
 }
-label, span{
+
+label, span {
     color: #999;
     font-size: xx-small;
 }
+
 .content {
     padding-top: 20%;
 }
@@ -13,7 +15,7 @@ label, span{
     position: relative;
     border-radius: 3px;
     margin-bottom: 15px;
-    padding: 0 20px 20px 20px;
+    padding: 0 10px 10px 10px;
 }
 
 .box-light-bg .category-box {
@@ -152,23 +154,34 @@ label, span{
 
 /*自定义微调细节*/
 /*border*/
-.border-right{
-    border-right:1px solid #ddd;
+.border-right {
+    border-right: 1px solid #ddd;
 }
-.border-bottom{
-    border-bottom:1px solid #ddd;
+
+.border-bottom {
+    border-bottom: 1px solid #ddd;
 }
+
 /*margin*/
-.m-t-sm{
+.m-t-sm {
     margin-top: 10px;
 }
-.m-t-md{
-     margin-top: 20px;
- }
+
+.m-t-md {
+    margin-top: 20px;
+}
+
 .nav .active a {
     border-bottom: 2px solid #00b0ff;
 }
 
-.para-panel{
-    margin:0 -15px;
+.para-panel {
+    margin: 0 -15px;
+}
+
+/*自定义栅格*/
+.col-md-5-self {
+    width: 20%;
+    float: left;
+    padding: 0 5px 5px 5px;
 }

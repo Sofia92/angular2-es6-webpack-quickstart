@@ -3,7 +3,7 @@ import {Component} from '@angular/core';
 @Component({
     selector: 'index',
     template: `
-		<div class="col-sm-8 col-sm-offset-2 content">
+		<div class="content">
 		<div class="form-group">
 		    <h1>{{title}}</h1>
         </div>

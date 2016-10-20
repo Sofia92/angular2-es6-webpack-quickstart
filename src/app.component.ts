@@ -8,7 +8,7 @@ import {TabParameterComponent} from './product-detail/tabs/para.component';
 
 @Component({
     selector: 'my-app',
-    template: `<div class="text-center col-sm-8 col-sm-offset-2">
+    template: `<div class="text-center">
     <div class="collapse navbar-collapse navbar-responsive-collapse">
         <ul class="nav navbar-nav">
             <li role="presentation"><a [routerLink]="['Index']">Index</a></li>

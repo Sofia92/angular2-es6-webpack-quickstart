@@ -22,7 +22,7 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: "<div class=\"text-center col-sm-8 col-sm-offset-2\">\n    <div class=\"collapse navbar-collapse navbar-responsive-collapse\">\n        <ul class=\"nav navbar-nav\">\n            <li role=\"presentation\"><a [routerLink]=\"['Index']\">Index</a></li>\n            <li role=\"presentation\"><a [routerLink]=\"['Category']\">Category</a></li>\n            <li role=\"presentation\"><a [routerLink]=\"['Detail',1]\">Detail</a></li>\n        </ul>\n    </div>\n    <div class=\"container well-lg\">\n     <router-outlet></router-outlet>\n    </div>\n    </div>\n    ",
+            template: "<div class=\"text-center\">\n    <div class=\"collapse navbar-collapse navbar-responsive-collapse\">\n        <ul class=\"nav navbar-nav\">\n            <li role=\"presentation\"><a [routerLink]=\"['Index']\">Index</a></li>\n            <li role=\"presentation\"><a [routerLink]=\"['Category']\">Category</a></li>\n            <li role=\"presentation\"><a [routerLink]=\"['Detail',1]\">Detail</a></li>\n        </ul>\n    </div>\n    <div class=\"container well-lg\">\n     <router-outlet></router-outlet>\n    </div>\n    </div>\n    ",
             directives: [router_1.ROUTER_DIRECTIVES, index_component_ts_1.IndexComponent, all_category_component_ts_1.AllCategoryComponent],
             providers: [router_1.ROUTER_PROVIDERS]
         }),
