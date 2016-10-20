@@ -1,87 +1,89 @@
 <div class="row productDetailImg">
-    <div class="col-sm-6">
-        <div class="col-sm-12">
-            <div class="imgZoom">
-                <img src="https://img.alicdn.com/bao/uploaded/i8/TB1sHz1MVXXXXbCXpXXQmdS_pXX_054834.jpg_430x430q90.jpg">
-            </div>
+    <div class="form-group">
+        <div class="col-sm-6">
+            <div class="col-sm-12">
+                <div class="imgZoom">
+                    <img src="https://img.alicdn.com/bao/uploaded/i8/TB1sHz1MVXXXXbCXpXXQmdS_pXX_054834.jpg_430x430q90.jpg">
+                </div>
 
-        </div>
-    </div>
-    <div class="col-sm-6">
-        <div class="form-group">
-            <div class="productTitle">
-                <h3>Xiaomi/小米 红米Note4 高配版 5.5英寸大屏智能手机 官方旗舰店</h3>
-                <span>64G闪存 金色预售 7天发货</span>
             </div>
         </div>
-        <div class="form-group">
-            <div class="productPrice">
-                <em title="1199.00"><b>¥</b>1199.00</em>
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="productParam text-left">
-                <div class="col-sm-3">
-                    <span class="control-label">版本</span>
-                </div>
-                <div class="col-sm-8">
-                    <button type="button" class="btn btn-default btn-sm">红米Note4 高配版</button>
+        <div class="col-sm-6">
+            <div class="form-group">
+                <div class="productTitle">
+                    <h3>Xiaomi/小米 红米Note4 高配版 5.5英寸大屏智能手机 官方旗舰店</h3>
+                    <span>64G闪存 金色预售 7天发货</span>
                 </div>
             </div>
-        </div>
-        <div class="form-group">
-            <div class="productParam text-left">
-                <div class="col-sm-3">
-                    <span class="control-label">网络类型</span>
-                </div>
-                <div class="col-sm-8">
-                    <button type="button" class="btn btn-default btn-sm">移动4G+/联通4G+/电信4G+</button>
+            <div class="form-group">
+                <div class="productPrice">
+                    <em title="1199.00"><b>¥</b>1199.00</em>
                 </div>
             </div>
-        </div>
-        <div class="form-group">
-            <div class="productParam text-left">
-                <div class="col-sm-3">
-                    <span class="control-label">机身颜色</span>
-                </div>
-                <div class="col-sm-8">
-                    <button type="button" class="btn btn-default btn-sm" >银白</button>
-                    <button type="button" class="btn btn-default btn-sm" >金色</button>
-                    <button type="button" class="btn btn-default btn-sm" >深灰</button>
+            <div class="form-group">
+                <div class="productParam text-left">
+                    <div class="col-sm-3">
+                        <span class="control-label">版本</span>
+                    </div>
+                    <div class="col-sm-8">
+                        <button type="button" class="btn btn-default btn-sm">红米Note4 高配版</button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="form-group">
-            <div class="productParam text-left">
-                <div class="col-sm-3">
-                    <span class="control-label">套餐类型</span>
-                </div>
-                <div class="col-sm-8">
-                    <button type="button" class="btn btn-default btn-sm">官方标配</button>
+            <div class="form-group">
+                <div class="productParam text-left">
+                    <div class="col-sm-3">
+                        <span class="control-label">网络类型</span>
+                    </div>
+                    <div class="col-sm-8">
+                        <button type="button" class="btn btn-default btn-sm">移动4G+/联通4G+/电信4G+</button>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="form-group">
-            <div class="productFooter">
-                <a class="btn-liking col-sm-12" href="#"><i class="glyphicon glyphicon-shopping-cart"></i> Purchase Now</a>
+            <div class="form-group">
+                <div class="productParam text-left">
+                    <div class="col-sm-3">
+                        <span class="control-label">机身颜色</span>
+                    </div>
+                    <div class="col-sm-8">
+                        <button type="button" class="btn btn-default btn-sm">银白</button>
+                        <button type="button" class="btn btn-default btn-sm">金色</button>
+                        <button type="button" class="btn btn-default btn-sm">深灰</button>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="productParam text-left">
+                    <div class="col-sm-3">
+                        <span class="control-label">套餐类型</span>
+                    </div>
+                    <div class="col-sm-8">
+                        <button type="button" class="btn btn-default btn-sm">官方标配</button>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="productFooter">
+                    <a class="btn-liking col-sm-12" href="#"><i class="glyphicon glyphicon-shopping-cart"></i> Purchase Now</a>
+                </div>
             </div>
         </div>
     </div>
 </div>
-<div class="row">
-    <h1>Tab Group Demo</h1>
-
-    <md-tab-group class="demo-tab-group">
-        <md-tab *ngFor="let tab of tabs" >{{tab.label}}
-            <template >{{tab.label}}</template>
-            <template >
-                {{tab.content}}
-                <br>
-                <br>
-                <br>
-                <md-input placeholder="Tab Label" [(ngModel)]="tab.label"></md-input>
-            </template>
-        </md-tab>
-    </md-tab-group>
-
+<div class="row m-t-md">
+    <div class="form-group">
+        <div class="col-sm-12">
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active"><a [routerLink]="['Tab-detail']">商品详情</a></li>
+                <li role="presentation"><a [routerLink]="['Tab-Para']">规格参数</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-12">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <router-outlet></router-outlet>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

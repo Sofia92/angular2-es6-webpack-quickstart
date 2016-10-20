@@ -12,28 +12,39 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * Created by sofia on 2016/10/18.
  */
 var core_1 = require('@angular/core');
-var Observable_1 = require('rxjs/Observable');
+var router_1 = require('@angular/router-deprecated/router');
+var detail_component_1 = require('./tabs/detail.component');
+var para_component_1 = require('./tabs/para.component');
 var ProductDetailComponent = (function () {
     function ProductDetailComponent() {
-        var _this = this;
         this.tabs = [
-            { label: 'Tab One', content: 'This is the body of the first tab' },
-            { label: 'Tab Two', content: 'This is the body of the second tab' },
-            { label: 'Tab Three', content: 'This is the body of the third tab' },
+            { title: 'Dynamic Title 1', content: 'Dynamic content 1' },
+            { title: 'Dynamic Title 2', content: 'Dynamic content 2' },
+            { title: 'Dynamic Title 3', content: 'Dynamic content 3' },
+            { title: 'Dynamic Title 4', content: 'Dynamic content 4' }
         ];
-        this.asyncTabs = Observable_1.Observable.create(function (observer) {
-            setTimeout(function () {
-                observer.next(_this.tabs);
-            }, 1000);
-        });
     }
     ProductDetailComponent = __decorate([
         core_1.Component({
             selector: 'product-detail',
             templateUrl: './src/product-detail/product-detail.component.html',
             styleUrls: ['./src/public/app.css'],
-            encapsulation: core_1.ViewEncapsulation.None,
-        }), 
+            directives: [router_1.ROUTER_DIRECTIVES, detail_component_1.TabDetailComponent, para_component_1.TabParameterComponent],
+            providers: [router_1.ROUTER_PROVIDERS]
+        }),
+        router_1.RouteConfig([
+            {
+                path: '/Detail/Tab-detail',
+                name: 'Tab-detail',
+                default: true,
+                component: detail_component_1.TabDetailComponent
+            },
+            {
+                path: '/Detail/Tab-Para',
+                name: 'Tab-Para',
+                component: para_component_1.TabParameterComponent
+            }
+        ]), 
         __metadata('design:paramtypes', [])
     ], ProductDetailComponent);
     return ProductDetailComponent;

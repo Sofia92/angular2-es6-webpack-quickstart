@@ -1,3 +1,10 @@
+body{
+    font-family: "Microsoft Yahei", sans-serif;
+}
+label, span{
+    color: #999;
+    font-size: xx-small;
+}
 .content {
     padding-top: 20%;
 }
@@ -20,6 +27,7 @@
     line-height: normal;
     font-weight: bold;
 }
+
 .productImg-wrap {
     display: table;
     table-layout: fixed;
@@ -30,10 +38,12 @@
     margin-bottom: 5px;
     border-bottom: rgba(240, 240, 240, 0.97) 1px solid;
 }
+
 .productImg img {
     display: block;
     margin: 0 auto;
 }
+
 .category-box:hover {
     position: relative;
     border-radius: 5px;
@@ -60,12 +70,14 @@
     font-size: 20px;
     color: #bc00000;
 }
+
 .productPrice em b {
     margin-right: 2px;
     font-weight: 700;
     font-size: 14px;
     vertical-align: middle;
 }
+
 .productTitle {
     display: block;
     margin-bottom: 3px;
@@ -86,14 +98,15 @@
     line-height: 17px;
     text-align: center;
     border-radius: 0 0 3px 3px;
-    padding-top:20px;
+    padding-top: 20px;
 }
 
 .productFooter p {
     padding-top: 10px;
     font-size: 11px;
 }
-.productDetailImg{
+
+.productDetailImg {
     padding: 10px 0 10px 0;
     background-color: #f5f5f5;
     border-bottom: 1px solid #ddd;
@@ -101,15 +114,18 @@
     border-bottom-left-radius: 3px;
     box-shadow: 0 0 20px silver;
 }
-.productParam{
+
+.productParam {
     height: 30px;
     line-height: 30px;
 }
-.imgZoom{
+
+.imgZoom {
     text-align: center;
-    border:1px solid #ddd;
+    border: 1px solid #ddd;
     background: #fff;
 }
+
 /*按钮样式*/
 .btn-liking {
     border: 0;
@@ -127,4 +143,32 @@
 /*自定义背景样式*/
 .bg-liking-category {
     background-color: rgba(223, 240, 255, 0.4);
+}
+
+.para-panel-heading {
+    background: #f5f5f5;
+    padding: 6px 15px;
+}
+
+/*自定义微调细节*/
+/*border*/
+.border-right{
+    border-right:1px solid #ddd;
+}
+.border-bottom{
+    border-bottom:1px solid #ddd;
+}
+/*margin*/
+.m-t-sm{
+    margin-top: 10px;
+}
+.m-t-md{
+     margin-top: 20px;
+ }
+.nav .active a {
+    border-bottom: 2px solid #00b0ff;
+}
+
+.para-panel{
+    margin:0 -15px;
 }

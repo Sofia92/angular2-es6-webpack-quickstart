@@ -13,6 +13,8 @@ var router_1 = require('@angular/router-deprecated/router');
 var index_component_ts_1 = require('./index/index.component.ts');
 var all_category_component_ts_1 = require('./all-category/all-category.component.ts');
 var product_detail_component_1 = require('./product-detail/product-detail.component');
+var detail_component_1 = require('./product-detail/tabs/detail.component');
+var para_component_1 = require('./product-detail/tabs/para.component');
 var AppComponent = (function () {
     function AppComponent() {
         this.title = 'Welcome to liking';
@@ -20,7 +22,7 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: "<div class=\"text-center col-sm-8 col-sm-offset-2\">\n    <div class=\"collapse navbar-collapse navbar-responsive-collapse\">\n        <ul class=\"nav navbar-nav\">\n            <li role=\"presentation\"><a [routerLink]=\"['Index']\">Index</a></li>\n            <li role=\"presentation\"><a [routerLink]=\"['Category']\">Category</a></li>\n            <li role=\"presentation\"><a [routerLink]=\"['Detail']\">Detail</a></li>\n        </ul>\n    </div>\n    <div class=\"container well-lg\">\n     <router-outlet></router-outlet>\n    </div>\n    </div>\n    ",
+            template: "<div class=\"text-center col-sm-8 col-sm-offset-2\">\n    <div class=\"collapse navbar-collapse navbar-responsive-collapse\">\n        <ul class=\"nav navbar-nav\">\n            <li role=\"presentation\"><a [routerLink]=\"['Index']\">Index</a></li>\n            <li role=\"presentation\"><a [routerLink]=\"['Category']\">Category</a></li>\n            <li role=\"presentation\"><a [routerLink]=\"['Detail',1]\">Detail</a></li>\n        </ul>\n    </div>\n    <div class=\"container well-lg\">\n     <router-outlet></router-outlet>\n    </div>\n    </div>\n    ",
             directives: [router_1.ROUTER_DIRECTIVES, index_component_ts_1.IndexComponent, all_category_component_ts_1.AllCategoryComponent],
             providers: [router_1.ROUTER_PROVIDERS]
         }),
@@ -36,9 +38,19 @@ var AppComponent = (function () {
                 component: all_category_component_ts_1.AllCategoryComponent
             },
             {
-                path: '/Detail',
+                path: '/Detail/...',
                 name: 'Detail',
                 component: product_detail_component_1.ProductDetailComponent
+            },
+            {
+                path: '/Detail/Tab-detail',
+                name: 'Tab-detail',
+                component: detail_component_1.TabDetailComponent
+            },
+            {
+                path: '/Detail/Tab-Para',
+                name: 'Tab-Para',
+                component: para_component_1.TabParameterComponent
             }
         ]), 
         __metadata('design:paramtypes', [])
