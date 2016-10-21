@@ -10,17 +10,28 @@ import {TabParameterComponent} from './product-detail/tabs/para.component';
     selector: 'my-app',
     template: `<div class="text-center">
     <div class="container">
+    <div class="row site-nav">
+        <div class="form-inline text-left">
+            <a href="">欢迎来到 Liking</a>
+            <a href="">请登录</a>
+            <a href="">免费注册</a>
+            <a class="shop-cart pull-right" href=""><i class="glyphicon glyphicon-shopping-cart"></i>购物车(0)件</a>
+        </div>
+    </div>
+    <div class="row">
         <ul class="nav navbar-nav">
             <li role="presentation"><a [routerLink]="['Index']">Index</a></li>
             <li role="presentation"><a [routerLink]="['Category']">Category</a></li>
             <li role="presentation"><a [routerLink]="['Detail',1]">Detail</a></li>
         </ul>
+        </div>
     </div>
     <div class="container well-lg">
      <router-outlet></router-outlet>
     </div>
     </div>
     `,
+    styleUrls: ['./src/public/app.css'],
     directives: [ROUTER_DIRECTIVES, IndexComponent, AllCategoryComponent],
     providers: [ROUTER_PROVIDERS]
 })

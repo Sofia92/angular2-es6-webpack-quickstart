@@ -22,7 +22,8 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         core_1.Component({
             selector: 'my-app',
-            template: "<div class=\"text-center\">\n    <div class=\"container\">\n        <ul class=\"nav navbar-nav\">\n            <li role=\"presentation\"><a [routerLink]=\"['Index']\">Index</a></li>\n            <li role=\"presentation\"><a [routerLink]=\"['Category']\">Category</a></li>\n            <li role=\"presentation\"><a [routerLink]=\"['Detail',1]\">Detail</a></li>\n        </ul>\n    </div>\n    <div class=\"container well-lg\">\n     <router-outlet></router-outlet>\n    </div>\n    </div>\n    ",
+            template: "<div class=\"text-center\">\n    <div class=\"container\">\n    <div class=\"row site-nav\">\n        <div class=\"form-inline text-left\">\n            <a href=\"\">\u6B22\u8FCE\u6765\u5230 Liking</a>\n            <a href=\"\">\u8BF7\u767B\u5F55</a>\n            <a href=\"\">\u514D\u8D39\u6CE8\u518C</a>\n            <a class=\"shop-cart pull-right\" href=\"\"><i class=\"glyphicon glyphicon-shopping-cart\"></i>\u8D2D\u7269\u8F66(0)\u4EF6</a>\n        </div>\n    </div>\n    <div class=\"row\">\n        <ul class=\"nav navbar-nav\">\n            <li role=\"presentation\"><a [routerLink]=\"['Index']\">Index</a></li>\n            <li role=\"presentation\"><a [routerLink]=\"['Category']\">Category</a></li>\n            <li role=\"presentation\"><a [routerLink]=\"['Detail',1]\">Detail</a></li>\n        </ul>\n        </div>\n    </div>\n    <div class=\"container well-lg\">\n     <router-outlet></router-outlet>\n    </div>\n    </div>\n    ",
+            styleUrls: ['./src/public/app.css'],
             directives: [router_1.ROUTER_DIRECTIVES, index_component_ts_1.IndexComponent, all_category_component_ts_1.AllCategoryComponent],
             providers: [router_1.ROUTER_PROVIDERS]
         }),
