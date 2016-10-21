@@ -14,7 +14,6 @@ label, span {
 .category-box {
     position: relative;
     border-radius: 3px;
-    margin-bottom: 15px;
     padding: 0 10px 10px 10px;
 }
 
@@ -49,7 +48,6 @@ label, span {
 .category-box:hover {
     position: relative;
     border-radius: 5px;
-    margin-bottom: 15px;
     box-shadow: 0 0 25px darkgray;
 }
 
@@ -175,6 +173,8 @@ label, span {
     border-bottom: 2px solid #00b0ff;
 }
 
+/*padding值*/
+
 .para-panel {
     margin: 0 -15px;
 }
@@ -183,5 +183,5 @@ label, span {
 .col-md-5-self {
     width: 20%;
     float: left;
-    padding: 0 5px 5px 5px;
+    padding: 5px;
 }

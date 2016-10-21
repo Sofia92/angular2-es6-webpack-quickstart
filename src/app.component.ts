@@ -9,7 +9,7 @@ import {TabParameterComponent} from './product-detail/tabs/para.component';
 @Component({
     selector: 'my-app',
     template: `<div class="text-center">
-    <div class="collapse navbar-collapse navbar-responsive-collapse">
+    <div class="container">
         <ul class="nav navbar-nav">
             <li role="presentation"><a [routerLink]="['Index']">Index</a></li>
             <li role="presentation"><a [routerLink]="['Category']">Category</a></li>

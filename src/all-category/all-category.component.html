@@ -13,75 +13,17 @@
                 <option value="c">c</option>
             </select>
         </div>
+        <div class="input-group pull-right">
+            <input type="text" class="form-control input-sm">
+            <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-sm">Search !</button>
+            </span>
+        </div>
     </div>
 </div>
 <div class="form-group">
     <div class="row box-light-bg">
-        <div class="col-md-5-self">
-            <div class="category-box">
-                <div class="productImg-wrap">
-                    <img src="https://img.alicdn.com/bao/uploaded/i7/TB1XVD5MVXXXXctXpXXKKRU_pXX_054843.jpg_b.jpg">
-                </div>
-                <div class="productPrice">
-                    <em title="1199.00"><b>¥</b>1199.00</em>
-                </div>
-                <div class="productTitle">
-                    <a target="_blank">Xiaomi/小米 红米Note4 高配版 全金属机身 十核旗舰处理器</a>
-                </div>
-                <div class="productFooter">
-                    <a class="btn-liking" href="#"><i class="glyphicon glyphicon-shopping-cart"></i> Purchase Now</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-5-self">
-            <div class="category-box">
-                <div class="productImg-wrap">
-                    <img src="https://img.alicdn.com/bao/uploaded/i7/TB1XVD5MVXXXXctXpXXKKRU_pXX_054843.jpg_b.jpg">
-                </div>
-                <div class="productPrice">
-                    <em title="1199.00"><b>¥</b>1199.00</em>
-                </div>
-                <div class="productTitle">
-                    <a target="_blank">Xiaomi/小米 红米Note4 高配版 全金属机身 十核旗舰处理器</a>
-                </div>
-                <div class="productFooter">
-                    <a class="btn-liking" href="#"><i class="glyphicon glyphicon-shopping-cart"></i> Purchase Now</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-5-self">
-            <div class="category-box">
-                <div class="productImg-wrap">
-                    <img src="https://img.alicdn.com/bao/uploaded/i7/TB1XVD5MVXXXXctXpXXKKRU_pXX_054843.jpg_b.jpg">
-                </div>
-                <div class="productPrice">
-                    <em title="1199.00"><b>¥</b>1199.00</em>
-                </div>
-                <div class="productTitle">
-                    <a target="_blank">Xiaomi/小米 红米Note4 高配版 全金属机身 十核旗舰处理器</a>
-                </div>
-                <div class="productFooter">
-                    <a class="btn-liking" href="#"><i class="glyphicon glyphicon-shopping-cart"></i> Purchase Now</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-5-self">
-            <div class="category-box">
-                <div class="productImg-wrap">
-                    <img src="https://img.alicdn.com/bao/uploaded/i7/TB1XVD5MVXXXXctXpXXKKRU_pXX_054843.jpg_b.jpg">
-                </div>
-                <div class="productPrice">
-                    <em title="1199.00"><b>¥</b>1199.00</em>
-                </div>
-                <div class="productTitle">
-                    <a target="_blank">Xiaomi/小米 红米Note4 高配版 全金属机身 十核旗舰处理器</a>
-                </div>
-                <div class="productFooter">
-                    <a class="btn-liking" href="#"><i class="glyphicon glyphicon-shopping-cart"></i> Purchase Now</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-5-self">
+        <div class="col-md-5-self" *ngFor="let cat of categories">
             <div class="category-box">
                 <div class="productImg-wrap">
                     <img src="https://img.alicdn.com/bao/uploaded/i7/TB1XVD5MVXXXXctXpXXKKRU_pXX_054843.jpg_b.jpg">

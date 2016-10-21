@@ -1,7 +1,6 @@
 import {Component} from '@angular/core';
 
 
-
 @Component({
     selector: 'all-category',
     templateUrl: './src/all-category/all-category.component.html',
@@ -10,5 +9,5 @@ import {Component} from '@angular/core';
 })
 
 export class AllCategoryComponent {
-
+    public categories:Array<any> = [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}];
 }
