@@ -1,10 +1,13 @@
 body {
-    font-family: "Microsoft Yahei", sans-serif;
+    font-family: 'Hiragino Sans GB', 'Lantinghei SC', 'Microsoft Yahei', SimSun;
 }
 
 label, span {
     color: #999;
     font-size: xx-small;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: bold;
 }
 
 .content {
@@ -29,13 +32,15 @@ label, span {
 
 .shop-cart i {
     color: #337ab7;
+
     padding-right: 10px;
 }
 
 /*分类页样式*/
-.page-nav{
-    padding:5px 10px;
+.page-nav {
+    padding: 5px 10px;
 }
+
 .category-box {
     position: relative;
     border-radius: 3px;
@@ -151,6 +156,42 @@ label, span {
     background: #fff;
 }
 
+/*购物车页面样式*/
+.shopping-cart-table {
+    font-family: "Microsoft Yahei", sans-serif;
+    font-size: small;
+}
+
+.shopping-cart-table {
+
+}
+
+.shopping-cart-table img {
+    width: 80px;
+    height: 80px;
+}
+
+.all-cart h4 {
+    border-bottom: 2px solid #4db0f3;
+}
+
+.count {
+    margin: -5px -5px 0 0;
+}
+
+.count span {
+    padding-right: 5px;
+}
+
+.count em {
+    color: red;
+    padding:0 5px;
+}
+
+.count button {
+    margin-left: 5px;
+}
+
 /*按钮样式*/
 .btn-liking {
     border: 0;
@@ -206,6 +247,51 @@ label, span {
 
 .para-panel {
     margin: 0 -15px;
+}
+
+/*表格宽度*/
+.mfb-xt3 {
+    width: 3%
+}
+
+.mfb-xxt {
+    width: 5%
+}
+
+.mfb-xt {
+    width: 8%
+}
+
+.mfb-x {
+    width: 10%
+}
+
+.mfb-xx {
+    width: 12%
+}
+
+.mfb-xxx {
+    width: 15%
+}
+
+.mfb-xxxt {
+    width: 18%
+}
+
+.mfb-xxs {
+    width: 20%
+}
+
+.mfb-xxxs {
+    width: 30%
+}
+
+.mfb-xxxxs {
+    width: 40%
+}
+
+.mfb-xxxsm {
+    width: 50%
 }
 
 /*自定义栅格*/

@@ -5,6 +5,7 @@ import {AllCategoryComponent} from './all-category/all-category.component.ts';
 import {ProductDetailComponent}  from './product-detail/product-detail.component';
 import {TabDetailComponent} from './product-detail/tabs/detail.component';
 import {TabParameterComponent} from './product-detail/tabs/para.component';
+import {ShoppingCartComponent} from './shopping-cart/shopping-cart.component';
 
 @Component({
     selector: 'my-app',
@@ -15,7 +16,7 @@ import {TabParameterComponent} from './product-detail/tabs/para.component';
             <a href="">欢迎来到 Liking</a>
             <a href="">请登录</a>
             <a href="">免费注册</a>
-            <a class="shop-cart pull-right" href=""><i class="glyphicon glyphicon-shopping-cart"></i>购物车(0)件</a>
+            <a class="shop-cart pull-right" [routerLink]="['ShoppingCart']"><i class="glyphicon glyphicon-shopping-cart"></i>购物车(2)件</a>
         </div>
     </div>
     <div class="row">
@@ -23,6 +24,7 @@ import {TabParameterComponent} from './product-detail/tabs/para.component';
             <li role="presentation"><a [routerLink]="['Index']">Index</a></li>
             <li role="presentation"><a [routerLink]="['Category']">Category</a></li>
             <li role="presentation"><a [routerLink]="['Detail',1]">Detail</a></li>
+            <li role="presentation"><a [routerLink]="['ShoppingCart']">shopping cart</a></li>
         </ul>
         </div>
     </div>
@@ -32,7 +34,7 @@ import {TabParameterComponent} from './product-detail/tabs/para.component';
     </div>
     `,
     styleUrls: ['./src/public/app.css'],
-    directives: [ROUTER_DIRECTIVES, IndexComponent, AllCategoryComponent],
+    directives: [ROUTER_DIRECTIVES, IndexComponent, AllCategoryComponent, ShoppingCartComponent],
     providers: [ROUTER_PROVIDERS]
 })
 @RouteConfig([
@@ -60,6 +62,11 @@ import {TabParameterComponent} from './product-detail/tabs/para.component';
         path: '/Detail/Tab-Para',
         name: 'Tab-Para',
         component: TabParameterComponent
+    },
+    {
+        path: '/ShoppingCart',
+        name: 'ShoppingCart',
+        component: ShoppingCartComponent
     }
 ])
 
