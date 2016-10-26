@@ -22,8 +22,8 @@ import {ShoppingCartComponent} from './shopping-cart/shopping-cart.component';
     <div class="row">
         <ul class="nav navbar-nav">
             <li role="presentation"><a [routerLink]="['Index']">Index</a></li>
-            <li role="presentation"><a [routerLink]="['Category']">Category</a></li>
-            <li role="presentation"><a [routerLink]="['Detail',1]">Detail</a></li>
+            <li role="presentation"><a [routerLink]="['Category',1]">Category</a></li>
+            <!--<li role="presentation"><a [routerLink]="['Detail',1]">Detail</a></li>-->
             <li role="presentation"><a [routerLink]="['ShoppingCart']">shopping cart</a></li>
         </ul>
         </div>
@@ -41,15 +41,16 @@ import {ShoppingCartComponent} from './shopping-cart/shopping-cart.component';
     {
         path: '/Index',
         name: 'Index',
-        component: IndexComponent
+        component: IndexComponent,
+        useAsDefault: true
     },
     {
-        path: '/Category',
+        path: '/Category/...',
         name: 'Category',
         component: AllCategoryComponent
     },
     {
-        path: '/Detail/...',
+        path: '/Category/Detail/...',
         name: 'Detail',
         component: ProductDetailComponent
     },

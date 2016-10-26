@@ -9,6 +9,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var router_1 = require('@angular/router-deprecated/router');
+var product_detail_component_1 = require('../product-detail/product-detail.component');
 var AllCategoryComponent = (function () {
     function AllCategoryComponent() {
         this.categories = [{}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}];
@@ -18,7 +20,16 @@ var AllCategoryComponent = (function () {
             selector: 'all-category',
             templateUrl: './src/all-category/all-category.component.html',
             styleUrls: ['./src/public/app.css'],
-        }), 
+            directives: [router_1.ROUTER_DIRECTIVES, product_detail_component_1.ProductDetailComponent],
+            providers: [router_1.ROUTER_PROVIDERS]
+        }),
+        router_1.RouteConfig([
+            {
+                path: '/Detail/...',
+                name: 'Detail',
+                component: product_detail_component_1.ProductDetailComponent
+            }
+        ]), 
         __metadata('design:paramtypes', [])
     ], AllCategoryComponent);
     return AllCategoryComponent;
